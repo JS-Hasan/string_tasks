@@ -5,7 +5,6 @@ let myObject = {
   city: "Example City",
   isStudent: true,
 };
-let keys = Object.keys(myObject);
-for (let key of keys) {
-  console.log("key: ", key, "|", "type: ", typeof key);
+for (let [key, value] of Object.entries(myObject)) {
+  console.log("key: ", key, "|", "type: ", typeof value);
 }
